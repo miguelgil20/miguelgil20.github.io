@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Web Elaborada</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(to right, #4facfe, #00f2fe);
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #333;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 1rem;
+            display: block;
+        }
+
+        nav a:hover {
+            background: #575757;
+        }
+
+        .hero {
+            background: url('https://via.placeholder.com/1920x600') no-repeat center center/cover;
+            color: white;
+            height: 60vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        .container {
+            padding: 2rem;
+        }
+
+        .services, .portfolio {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1rem;
+        }
+
+        .card {
+            background: #f4f4f4;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .card img {
+            max-width: 100%;
+            display: block;
+        }
+
+        .card h3 {
+            margin: 0;
+            padding: 1rem;
+            background: #00f2fe;
+            color: white;
+        }
+
+        .card p {
+            padding: 1rem;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        input, textarea {
+            padding: 0.5rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            width: 100%;
+        }
+
+        button {
+            padding: 0.5rem;
+            border: none;
+            background: #4facfe;
+            color: white;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #00f2fe;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: #333;
+            color: white;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a Mi Página Web</h1>
+        <p>Un lugar donde la creatividad se encuentra con la tecnología</p>
+    </header>
+
+    <nav>
+        <a href="#about">Inicio</a>
+        <a href="#services">Servicios</a>
+        <a href="#portfolio">Portafolio</a>
+        <a href="#contact">Contacto</a>
+    </nav>
+
+    <section class="hero">
+        <h1>Diseño Web Moderno y Funcional</h1>
+    </section>
+
+    <div class="container">
+        <section id="about">
+            <h2>Sobre Nosotros</h2>
+            <p>Somos un equipo de apasionados por la tecnología y el diseño. Creamos experiencias digitales que cautivan a los usuarios y cumplen los objetivos de nuestros clientes.</p>
+        </section>
+
+        <section id="services">
+            <h2>Servicios</h2>
+            <div class="services">
+                <div class="card">
+                    <h3>Desarrollo Web</h3>
+                    <p>Creación de sitios web modernos, rápidos y seguros.</p>
+                </div>
+                <div class="card">
+                    <h3>Diseño Gráfico</h3>
+                    <p>Diseños impactantes para destacar tu marca.</p>
+                </div>
+                <div class="card">
+                    <h3>SEO y Marketing</h3>
+                    <p>Optimización para motores de búsqueda y estrategias de marketing digital.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio">
+            <h2>Portafolio</h2>
+            <div class="portfolio">
+                <div class="card">
+                    <img src="https://via.placeholder.com/300x200" alt="Proyecto 1">
+                    <h3>Proyecto 1</h3>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/300x200" alt="Proyecto 2">
+                    <h3>Proyecto 2</h3>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/300x200" alt="Proyecto 3">
+                    <h3>Proyecto 3</h3>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contacto</h2>
+            <form>
+                <input type="text" placeholder="Tu Nombre" required>
+                <input type="email" placeholder="Tu Correo Electrónico" required>
+                <textarea rows="5" placeholder="Tu Mensaje" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Mi Página Web. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
